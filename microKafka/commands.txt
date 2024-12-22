@@ -1,0 +1,8 @@
+**Create a topic (e.g., customer-topic):
+kafka-topics --create --topic billing-topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
+**Verify the topic:
+kafka-topics --list --bootstrap-server localhost:9092
+
+** list topic entries from the beginning
+ kafka-console-consumer --bootstrap-server localhost:9092 --topic <topic_name> --from-beginning
